@@ -1,31 +1,51 @@
 const qBank = [
   {
     question:
-      "how build the app ?",
-    answers: ["vinayak", "sarthak", "somil", "devesh"],
-    correct: "vinayak",
-    questionId: "099099"
+      "An Optical Input Device that interprets pencil marks on paper media ______",
+    answers: [
+      "O.M.R",
+      "Punch card reader",
+      "Optical scanners",
+      "Magnetic tape"
+    ],
+    correct: "O.M.R",
+    questionId: "001"
   },
   {
     question:
-      "how build the app ?",
-    answers: ["vinayak", "sarthak", "somil", "devesh"],
-    correct: "vinayak",
-    questionId: "093909"
+      "A Billionth of a second is defined as a ______",
+    answers: [
+      "Millisecond",
+      "Microsecond",
+      "Nanosecond",
+      "Picoseconds"
+    ],
+    correct: "Nanosecond",
+    questionId: "002"
   },
   {
     question:
-      "how build the app ?",
-    answers: ["vinayak", "sarthak", "somil", "devesh"],
-    correct: "vinayak",
-    questionId: "009039"
+      "CD-ROM stands for _____",
+    answers: [
+      "Compactable Read Only Memory",
+      "Compact Data Read Only Memory",
+      "Compactable Disk Read Only Memory",
+      "Compact Disk Read Only Memory"
+    ],
+    correct: "Compact Disk Read Only Memory",
+    questionId: "003"
   },
   {
     question:
-      "how build the app ?",
-    answers: ["vinayak", "sarthak", "somil", "devesh"],
-    correct: "vinayak",
-    questionId: "090089"
+      "The Name box on to the left of formula bar _____",
+    answers: [
+      "shows the name of workbook currently working on",
+      "shows the name of worksheet currently working on",
+      "shows the name of cell or range currently working on",
+      "None of above"
+    ],
+    correct: "shows the name of cell or range currently working on",
+    questionId: "004"
   },
   {
     question:
@@ -122,5 +142,5 @@ const qBank = [
 
 ];
 
-export default (n = 5) =>
+export default (n = 10) =>
   Promise.resolve(qBank.sort(() => 0.5 - Math.random()).slice(0, n));
